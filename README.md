@@ -296,11 +296,3 @@ The `versions.txt` prints the versions of the porefile dependencies.
 ## Citation
 A manuscript is under preparation.
 
-## Authors: 
-        Cecilia Salazar (csalazar@pasteur.edu.uy) 
-        Ignacio Ferrés (igferres@gmail.com)
-        Matías Giménez (mgimenez@pasteur.edu.uy)
-        Gregorio Iraola (giraola@pasteur.edu.uy)
-       
-        Microbial Genomics Laboratory
-        Institut Pasteur de Montevideo (Uruguay)

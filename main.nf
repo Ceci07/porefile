@@ -5,7 +5,7 @@ nextflow.enable.dsl = 2
 params.fq = "*.fastq"
 params.outdir = "results"
 params.noSpeciesPolishing = false
-params.lowAbundanceThreshold = 0.02
+params.lowAbundanceThreshold = 0
 params.isDemultiplexed = false
 params.porechop_extra_end_trim = 0
 params.noNanoplot = false
@@ -251,21 +251,21 @@ def helpMessage() {
                                       adds a download step (you must have internet connection).
         --silvaFastaURL               URL to SILVA_*_SSURef_NR99_tax_silva.fasta.gz file. It will be used if you
                                       don't provide the --silvaFasta parameter (above). Default is:
-                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/SILVA_138.1_SSURef_NR99_tax_silva.fasta.gz'.
+                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/SILVA_138.2_SSURef_NR99_tax_silva.fasta.gz'.
 
         --silvaTaxNcbiSp              Path to tax_ncbi-species_ssu_ref_nr99_*.txt.gz file. You can provide it
                                       either compressed (.gz) or not. If not provided, the workflow automatically
                                       adds a download step.
         --silvaTaxNcbiSpURL           URL to tax_ncbi-species_ssu_ref_nr99_*.txt.gz file. It will be used if you
                                       don't provide the --silvaFasta parameter (above). Default is:
-                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/ncbi/tax_ncbi-species_ssu_ref_nr99_138.1.txt.gz'.
+                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/ncbi/tax_ncbi-species_ssu_ref_nr99_138.2.txt.gz'.
 
         --silvaTaxmap                 Path to taxmap_slv_ssu_ref_nr_*.txt.gz file. You can provide it
                                       either compressed (.gz) or not. If not provided, the workflow automatically
                                       adds a download step.
         --silvaTaxmapURL              URL to taxmap_slv_ssu_ref_nr_*.txt.gz file. It will be used if you
                                       don't provide the --silvaFasta parameter (above). Default is:
-                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/taxmap_slv_ssu_ref_nr_138.1.txt.gz'.
+                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/taxmap_slv_ssu_ref_nr_138.2.txt.gz'.
 
         --fullSilva                   By default, porefile reduces SILVA to prokatyote SSU (16S). Use this flag
                                       to deactivate the reducing step and use the full SILVA database.
@@ -314,7 +314,7 @@ def helpMessage() {
         --noNanoplot                  Set this flag to avoid QCheck sub-workflow. 
         --noSpeciesPolishing          Avoid the polishing sub-workflow.
         --lowAbundanceThreshold       The threshold of total abundance (from 0 to 1) to be considered as "low", and
-                                      which the pipeline will try to re assign (default: 0.02).
+                                      which the pipeline will try to re assign (default: 0).
 
     Container options (note single dash usage!):
         -profile docker               Use docker as container engine (default).

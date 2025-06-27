@@ -8,7 +8,7 @@
 
 Reads are then classified by [MEGAN6 CE](https://software-ab.informatik.uni-tuebingen.de/download/megan6/welcome.html) tools, and using a SILVA-to-NCBI accession mapping file generated on-the-fly. 
 
-Porefile uses SILVA SSU NR99 version 138.1 by default, which is the latest available up to this date (Feb 2023). If a new version were released, users can manually provide the new links to tell `Porefile` to download it.
+Porefile currently uses SILVA SSU NR99 version 138.2 by default, which is the latest available up to this date (July 2024). If a new version were released, users can manually provide the new links to tell `Porefile` to download it.
 
 Contents:
   - [Introduction](#introduction)

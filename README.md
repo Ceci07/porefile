@@ -92,9 +92,9 @@ nextflow run microgenlab/porefile --fq 'path/to/*.fastq' -profile docker
 If a local copy of the required SILVAdb files were provided, the workflow avoids re downloading it:
 ```
 nextflow run microgenlab/porefile --fq "./fastq/*.fastq" \
-    --silvaFasta "./SILVA_138.1_SSURef_NR99_tax_silva.fasta.gz" \
-    --silvaTaxNcbiSp "./tax_ncbi-species_ssu_ref_nr99_138.1.txt.gz" \
-    --silvaTaxmap "./taxmap_slv_ssu_ref_nr_138.1.txt.gz" \
+    --silvaFasta "./SILVA_138.2_SSURef_NR99_tax_silva.fasta.gz" \
+    --silvaTaxNcbiSp "./tax_ncbi-species_ssu_ref_nr99_138.2.txt.gz" \
+    --silvaTaxmap "./taxmap_slv_ssu_ref_nr_138.2.txt.gz" \
     -profile docker
 ```
 

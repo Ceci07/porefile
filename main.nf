@@ -28,9 +28,9 @@ params.minimap2_x = "map-ont"
 params.minimap2_KM = 200
 params.help = false
 
-params.silvaFasta = "./silvadb/Exports/SILVA_138.2_SSURef_NR99_tax_silva.fasta.gz"
-params.silvaTaxNcbiSp = "./silvadb/Exports/taxonomy/ncbi/tax_ncbi-species_ssu_ref_nr99_138.2.txt.gz"
-params.silvaTaxmap = "./silvadb/Exports/taxonomy/ncbi/taxmap_slv_ssu_ref_nr_138.2.txt.gz"
+params.silvaFasta = "./silvadb/Exports/SILVA_144_SSURef_NR99_tax_silva_trunc.fasta.gz"
+params.silvaTaxNcbiSp = "./silvadb/Exports/taxonomy/ncbi/tax_ncbi-species_ssu_ref_nr99_144.txt.gz"
+params.silvaTaxmap = "./silvadb/Exports/taxonomy/ncbi/taxmap_slv_ssu_ref_nr_144.txt.gz"
 
 params.silvaFastaURL = "https://www.arb-silva.de/fileadmin/silva_databases/release_138_2/Exports/
 SILVA_144_SSURef_NR99_tax_silva_trunc.fasta.gz"
@@ -254,21 +254,21 @@ def helpMessage() {
                                       adds a download step (you must have internet connection).
         --silvaFastaURL               URL to SILVA_*_SSURef_NR99_tax_silva.fasta.gz file. It will be used if you
                                       don't provide the --silvaFasta parameter (above). Default is:
-                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/SILVA_138.2_SSURef_NR99_tax_silva.fasta.gz'.
+                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/SILVA_144_SSURef_NR99_tax_silva_trunc.fasta.gz'.
 
         --silvaTaxNcbiSp              Path to tax_ncbi-species_ssu_ref_nr99_*.txt.gz file. You can provide it
                                       either compressed (.gz) or not. If not provided, the workflow automatically
                                       adds a download step.
         --silvaTaxNcbiSpURL           URL to tax_ncbi-species_ssu_ref_nr99_*.txt.gz file. It will be used if you
                                       don't provide the --silvaFasta parameter (above). Default is:
-                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/ncbi/tax_ncbi-species_ssu_ref_nr99_138.2.txt.gz'.
+                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/ncbi/tax_ncbi-species_ssu_ref_nr99_144.txt.gz'.
 
         --silvaTaxmap                 Path to taxmap_slv_ssu_ref_nr_*.txt.gz file. You can provide it
                                       either compressed (.gz) or not. If not provided, the workflow automatically
                                       adds a download step.
         --silvaTaxmapURL              URL to taxmap_slv_ssu_ref_nr_*.txt.gz file. It will be used if you
                                       don't provide the --silvaFasta parameter (above). Default is:
-                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/taxmap_slv_ssu_ref_nr_138.2.txt.gz'.
+                                      'https://www.arb-silva.de/fileadmin/silva_databases/current/Exports/taxonomy/taxmap_slv_ssu_ref_nr_144.txt.gz'.
 
         --fullSilva                   By default, porefile reduces SILVA to prokatyote SSU (16S). Use this flag
                                       to deactivate the reducing step and use the full SILVA database.
